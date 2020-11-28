@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource([
+Route::resources([
     'customer'=>CustomerContrller::class,
     'task'=>TasKController::class,
 ]);
